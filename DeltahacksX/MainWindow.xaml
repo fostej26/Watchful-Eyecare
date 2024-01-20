@@ -1,0 +1,23 @@
+﻿<Window x:Name="___No_Name_" x:Class="DeltahacksX.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeltahacksX"
+        mc:Ignorable="d"
+        Title="DeltahacksX" Height="200" Width="180">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="22*"/>
+            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <RadioButton x:Name="_20Button" Content="20 (Reccomended)" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top" IsChecked="True" Grid.ColumnSpan="3" Grid.Column="1"/>
+        <RadioButton x:Name="_25Button" Content="25" HorizontalAlignment="Left" Margin="20,100,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <RadioButton x:Name="_15Button" Content="15" HorizontalAlignment="Left" Margin="20,60,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <RadioButton x:Name="_30Button" Content="30" HorizontalAlignment="Left" Margin="20,120,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <ProgressBar x:Name="progress_bar" HorizontalAlignment="Left" Height="10" Margin="30,30,0,0" VerticalAlignment="Top" Width="100" Grid.ColumnSpan="3" Grid.Column="1"/>
+        <Button x:Name="ConfirmButton" Content="Confirm" HorizontalAlignment="Left" Margin="30,149,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click" Grid.ColumnSpan="3" Grid.Column="1"/>
+    </Grid>
+</Window>
